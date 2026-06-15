@@ -1,4 +1,5 @@
 using System;
+using System.Data.Common;
 using System.Runtime.InteropServices.Marshalling;
 using sample.Enums;
 using sample.Interfaces;
@@ -8,9 +9,10 @@ namespace sample.Models;
 public class PaintProduct :IBuyable
 {
 
-    public PaintProduct(string name, PaintType type, PaintSpecification specification, decimal price, decimal taxRate)
-    {
+    public PaintProduct(string name, int id, PaintType type, PaintSpecification specification, decimal price, decimal taxRate)
+    {   
         Name = name;
+        Id = id;
         Type = type;
         Specification = specification;
         Price = price;
@@ -20,6 +22,8 @@ public class PaintProduct :IBuyable
     public const decimal DefaultDiscount = 0.05m;
     public string Name;
     public PaintType Type;
+    
+    public int Id;
     public PaintSpecification Specification;
     public decimal Price;
 
