@@ -1,5 +1,5 @@
-﻿using sample.Enums;
-using sample.Models;
+﻿using PaintStore.Models;
+using PaintStore.Models.Enums;
 
 // PaintType paintType = PaintType.BaseCoat;
 
@@ -18,8 +18,6 @@ string name1 = "YouQiYiHao";
 PaintType type1 = PaintType.BaseCoat;
 PaintSpecification specification1 = new PaintSpecification("Blue",5);
 decimal price1 = 40m;
-
-
 
 string name2 = "YouQiErHao";
 PaintType type2 = PaintType.Glossy;

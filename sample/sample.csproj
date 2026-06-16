@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Enums/" />
-    <Folder Include="Interfaces/" />
-    <Folder Include="Models/" />
+    <ProjectReference Include="..\PaintStore.Models\PaintStore.Models.csproj" />
   </ItemGroup>
 
 </Project>
