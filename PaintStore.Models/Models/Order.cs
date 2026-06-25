@@ -12,10 +12,17 @@ public class Order
 
     // public List<PaintProduct> PaintProducts { get; set; }
     public List<OrderItem> OrderItems { get; set; }
+
     public Order()
     {
         CreatedDate = DateTime.Now;
         OrderItems = new List<OrderItem>();
+    }
+    public Order(int userId,List<OrderItem> orderItems)
+    {
+        CreatedDate = DateTime.Now;
+        UserId = userId;
+        OrderItems = orderItems;
 
     }
 
