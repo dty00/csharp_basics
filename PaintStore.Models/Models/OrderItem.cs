@@ -16,6 +16,14 @@ public class OrderItem
 
     public decimal TotalPrice => Quantity * UnitPrice ;
 
-
+    public OrderItem(int quantity, int paintProductId, decimal unitPrice)
+    {
+        Quantity = quantity;
+        PaintProductId = paintProductId;
+        UnitPrice = unitPrice;
+    }
+    public OrderItem()
+    {
+    }
 
 }
